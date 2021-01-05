@@ -5,11 +5,17 @@ plugins.registerPlugin('my-plugin', {
     render: () => <h1>Hello World</h1>,
 });
 
+plugins.registerPlugin('my-other-plugin', {
+    render: () => <h1>No Icon</h1>,
+});
+
 plugins.getPlugins();
 
 plugins.getPlugin('my-plugin');
 
 plugins.unregisterPlugin('my-plugin');
+
+plugins.unregisterPlugin('my-other-plugin');
 
 interface OwnProps {
     foobar: number;
