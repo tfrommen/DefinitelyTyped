@@ -13,7 +13,7 @@ export interface PluginSettings {
      * element (or function returning an element) if you choose to render your
      * own SVG.
      */
-    icon: Dashicon.Icon | ComponentType;
+    icon?: Dashicon.Icon | ComponentType;
     /**
      * A component containing the UI elements to be rendered.
      */
